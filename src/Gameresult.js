@@ -1,4 +1,5 @@
 export default class GameResult {
+
   #score;
 
   constructor(score) {
@@ -8,4 +9,9 @@ export default class GameResult {
   getScore() {
     return this.#score;
   }
+
+  isWinner() {
+    return this.#score > 0;
+  }
+
 }
